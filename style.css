@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #78c1f3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 400px;
+    }
+}
+
+.todo-header {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.todo-body input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.todo-body img {
+    cursor: pointer;
+}
+
+ul  li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#edeef0 ;
+    border-radius: 5px;
+    margin-top: 8px;
+}

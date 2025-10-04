@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h1>ToDo List</h1>
+            <img src="./images/sketchbook.png" alt="notebook" width="50">
+        </div>
+        <div class="todo-body">
+            <input type="text" placeholder="  Add your item.." id="todoText">
+            <img src="./images/add.png" alt="add" width="40" id="AddUpdateClick" onclick="CreateToDoItem()">
+        </div>
+        <h5 id="Alert"></h5>
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
