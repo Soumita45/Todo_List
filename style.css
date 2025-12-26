@@ -1,70 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: #78c1f3;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    background: #ffffff;
-    padding: 25px;
-    width: 300px;
+.wrapper {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: palevioletred;
     border-radius: 10px;
+    text-align: center;
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 400px;
-    }
+h1 {
+    color: white;
+    margin-bottom: 20px;
 }
 
-.todo-header {
-    display: flex;
-    gap: 10px;
-}
-
-.todo-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #edeef0;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.todo-body input {
+.input-value {
+    padding: 8px;
+    border-radius: 6px;
     border: none;
     outline: none;
-    background: transparent;
-    padding: 10px 0;
-    font-family: "Work Sans", sans-serif;
+    width: 60%;
 }
 
-.todo-body img {
+.btn {
+    padding: 8px 16px;
+    border: none;
+    background: skyblue;
+    border-radius: 6px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
-ul  li {
-    list-style-type: none;
-    cursor: pointer;
+.done-btn {
+    background-color: rgb(76, 159, 76);
+    color: #fff;
+    border: none;
     padding: 5px;
-    font-size: 18px;
+    margin-right: 5px;
+    border-radius: 8px;
 }
 
-li {
+.del-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#edeef0 ;
-    border-radius: 5px;
-    margin-top: 8px;
+
+    text-align: start;
+    background: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.container div {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
